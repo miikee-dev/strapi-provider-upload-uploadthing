@@ -1,0 +1,63 @@
+{
+  "name": "strapi-provider-upload-uploadthing",
+  "version": "0.0.1",
+  "description": "UploadThing provider for strapi upload.",
+  "keywords": [
+    "upload",
+    "uploadthing",
+    "strapi"
+  ],
+  "homepage": "https://github.com/miikee-dev/strapi-provider-upload-uploadthing",
+  "bugs": {
+    "url": "https://github.com/miikee-dev/strapi-provider-upload-uploadthing"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/miikee-dev/strapi-provider-upload-uploadthing.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Mike",
+    "email": "hi@miikee.dev",
+    "url": "https://github.com/miikee-dev/strapi-provider-upload-uploadthing"
+  },
+  "maintainers": [
+    {
+      "name": "Mike",
+      "email": "hi@miikee.dev",
+      "url": "https://miikee.dev"
+    }
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "source": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "build": "pack-up build",
+    "clean": "run -T rimraf ./dist",
+    "lint": "run -T eslint .",
+    "test:unit": "run -T jest",
+    "test:unit:watch": "run -T jest --watch",
+    "watch": "pack-up watch"
+  },
+  "dependencies": {
+    "uploadthing": "^6.13.2"
+  },
+  "devDependencies": {
+    "@strapi/pack-up": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.2.0",
+    "@typescript-eslint/parser": "^8.2.0",
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  }
+}
