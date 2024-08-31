@@ -1,6 +1,6 @@
 {
   "name": "strapi-provider-upload-uploadthing",
-  "version": "0.0.1",
+  "version": "1.0.0-beta.0",
   "description": "UploadThing provider for strapi upload.",
   "keywords": [
     "upload",

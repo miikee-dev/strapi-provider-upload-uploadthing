@@ -1,10 +1,14 @@
 # @miikee-dev/strapi-provider-upload-uploadthing
 
-![stability-alpha](https://img.shields.io/badge/stability-alpha-f4d03f.svg)
+[![stability-beta](https://img.shields.io/badge/stability-beta-33bbff.svg)]
 [![npm](https://img.shields.io/npm/v/strapi-provider-upload-uploadthing.svg?style=flat-shiny&logo=npm&color=white)](https://www.npmjs.com/package/strapi-provider-upload-uploadthing)
 ![Made with Typescript](https://img.shields.io/badge/Made%20with-TypeScript-blue)
 
-Code is functional but volatile and prone to breaking changes. Feature development is in progress and solutions are being validated.
+Code is in the process of settling, but has not yet had sufficient real-world testing to be considered mature. Backwards-compatibility will be maintained if reasonable.
+
+## Roadmap
+
+- Add Support for private ACL and signed URL expiration.
 
 ## Resources
 
@@ -59,7 +63,7 @@ exports.default = (env) => ({
 
 Due to the default settings in the Strapi Security Middleware you will need to modify the `contentSecurityPolicy` settings to properly see thumbnail previews in the Media Library. You should replace `strapi::security` string with the object bellow instead as explained in the [middleware configuration](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/configurations/required/middlewares.html#loading-order) documentation.
 
-`./config/middlewares.js`
+`./config/middlewares.js` or `./config/middleware.ts` for TypeScript projects:
 
 ```js
 module.exports = [
@@ -81,4 +85,3 @@ module.exports = [
   // ...
 ];
 ```
-
