@@ -1,6 +1,6 @@
 # @miikee-dev/strapi-provider-upload-uploadthing
 
-[![stability-beta](https://img.shields.io/badge/stability-beta-33bbff.svg)]
+![stability-beta](https://img.shields.io/badge/stability-beta-33bbff.svg)
 [![npm](https://img.shields.io/npm/v/strapi-provider-upload-uploadthing.svg?style=flat-shiny&logo=npm&color=white)](https://www.npmjs.com/package/strapi-provider-upload-uploadthing)
 ![Made with Typescript](https://img.shields.io/badge/Made%20with-TypeScript-blue)
 
